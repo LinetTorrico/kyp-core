@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ExceptionService} from 'kyp-common';
+import { ExceptionService } from 'kyp-common';
+
+
 
 @Component({
   selector: 'lib-kyp-core',
@@ -13,7 +15,7 @@ import {ExceptionService} from 'kyp-common';
 })
 export class KypCoreComponent implements OnInit {
 
-  constructor(private exceptionService: ExceptionService) { }
+  constructor(private exception: ExceptionService) { }
 
   ngOnInit(): void {
     console.log('hello world');
