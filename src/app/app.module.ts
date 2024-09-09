@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {KypCoreModule} from 'kyp-core';
+import {ExceptionService} from 'kyp-common';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import {KypCoreModule} from 'kyp-core';
     BrowserModule,
     KypCoreModule,
   ],
-  providers: [],
+  providers: [ExceptionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

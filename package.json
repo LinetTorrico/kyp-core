@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-library": "ng build kyp-core",
+    "build-prod": "ng build kyp-core --prod",
+    "pack-lib": "cd dist/kyp-core && npm pack"
   },
   "private": true,
   "dependencies": {
@@ -30,7 +33,7 @@
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
-    "kyp-core": "file:lib/kyp-core-0.0.2.tgz",
+    "kyp-core": "file:lib/kyp-core-0.0.1.tgz",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.1.0",

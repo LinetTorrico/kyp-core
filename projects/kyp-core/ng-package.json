@@ -3,5 +3,10 @@
   "dest": "../../dist/kyp-core",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": [
+    "kyp-common",
+    "tslib",
+    "underscore"
+  ]
 }
