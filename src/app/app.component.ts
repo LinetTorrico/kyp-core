@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {AuthenticationService} from 'kyp-core';
+
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import {AuthenticationService} from 'kyp-core';
 })
 export class AppComponent {
   title = 'my-main-lib';
-  constructor(private authenticationService: AuthenticationService) {
+  constructor() {
     console.log('AppComponent has been initialized');
   }
 }
