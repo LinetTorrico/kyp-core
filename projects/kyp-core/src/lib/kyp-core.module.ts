@@ -1,6 +1,7 @@
 import {ModuleWithProviders, NgModule, Optional, SkipSelf} from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
-import {SessionmanagerService} from './services/sessionmanager.service';
+import {ConfigService} from './config-service';
+import {AuthenticationService} from './services/auth/authentication.service';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ export class KypCoreModule {
   static forRoot(): ModuleWithProviders<KypCoreModule> {
     return {
       ngModule: KypCoreModule,
-      providers: [SessionmanagerService],
+      providers: [ConfigService, AuthenticationService]
     };
   }
 }
