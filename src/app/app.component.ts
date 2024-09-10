@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SessionmanagerService} from 'kyp-core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-main-lib';
+  constructor(private sessionManager: SessionmanagerService) {
+    console.log('AppComponent has been initialized');
+  }
 }

@@ -7,7 +7,6 @@
   },
   "dependencies": {
     "tslib": "^2.0.0",
-    "kyp-common": "file:lib/kyp-common-0.0.1.tgz",
     "underscore": "^1.12.0"
   }
 }
